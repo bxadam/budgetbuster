@@ -1,11 +1,16 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, getDoc, getDocs } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
 const firebaseApp = initializeApp();
 
-const db = getFirestore();
-
+const db = getFirestore(firebaseApp);
+const auth = getAuth(firebaseApp);
 const userCollection = db.collection("users");
 
-console.log(userCollection);
+function getUsers() {
+  db.collection("users").getDocs();
+  console.log(userCollection);
+}
+
+getUsers();
