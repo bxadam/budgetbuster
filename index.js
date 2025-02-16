@@ -1,7 +1,9 @@
-const { initializeApp } = require("firebase-admin/app");
-const { getFirestore } = require("firebase-admin/firestore");
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
-initializeApp();
+const firebaseApp = initializeApp();
+
 const db = getFirestore();
 
 const userCollection = db.collection("users");
