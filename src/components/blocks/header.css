@@ -1,0 +1,87 @@
+.header {
+  margin: 0 auto;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.header__add-expense-button {
+  height: 220px;
+  width: 240px;
+  padding: 20px;
+  font-size: 48px;
+  border-radius: 50px;
+  color: white;
+  border: none;
+  background-color: black;
+}
+
+.header__budget-title {
+  font-size: 30px;
+}
+
+.header__title {
+  margin: 10px auto 0;
+  letter-spacing: 10px;
+}
+
+.header__month-selector {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__previous-button {
+  width: 50px;
+  border: none;
+  background-color: #3adc9e;
+}
+
+.header__previous-button:hover {
+  cursor: pointer;
+}
+
+.header__current-month {
+  margin: auto 0;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.header__next-button {
+  width: 50px;
+  border: none;
+  background-color: #3adc9e;
+}
+
+.header__next-button:hover {
+  cursor: pointer;
+}
+
+.header__budget-total {
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.header__login-button {
+  height: 60px;
+  width: 150px;
+  padding: 20px;
+  font-size: 24px;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.header__profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__profile-avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+}
