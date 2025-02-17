@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Budget Buster Landing Page" />
+    <meta name="author" content="Budget Busters" />
+    <meta name="keywords" content="HTML, CSS" />
+    <link rel="stylesheet" href="/vite-project/src/pages/index.css" />
     <title>Budget Buster</title>
   </head>
   <body>
     <div id="root"></div>
+    <div class="page">
+      <div class="header">
+        <button class="header__add-expense-button" type="button">
+          ADD EXPENSE +
+        </button>
+        <section class="header__budget-title">
+          <h1 class="header__title" id="title">Budget Buster</h1>
+          <div class="header__month-selector">
+            <button class="header__previous-button"><</button>
+            <p class="header__current-month">January</p>
+            <button class="header__next-button">></button>
+          </div>
+          <p class="header__budget-total">BUDGET: $2600</p>
+        </section>
+        <section class="header__profile">
+          <img
+            class="header__profile-avatar"
+            src="../vite-project/src/images/avatar.jpg"
+            alt=""
+          />
+          <button class="header__login-button" type="button">Log In</button>
+        </section>
+      </div>
+      <main class="content">
+        <div class="content__expenses">
+          <h2 class="content__expenses-title">Expense List</h2>
+          <ul class="content__expenses-list">
+            <li class="content__expenses-item">Expense 1</li>
+            <li class="content__expenses-item">Expense 2</li>
+            <li class="content__expenses-item">Expense 3</li>
+          </ul>
+          <div class="content__summary"></div>
+          <h2 class="content__summary-title">Summary</h2>
+          <p class="content__summary-description"></p>
+          <div class="piechart"></div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
     <script type="module" src="./src/main.jsx"></script>
     <script type="module" src="/index.js"></script>
   </body>

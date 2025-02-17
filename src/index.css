@@ -1,0 +1,7 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts.css);
+@import url(../components/blocks/page.css);
+@import url(../components/blocks/header.css);
+@import url(../components/blocks/content.css);
+@import url(../components/blocks/footer.css);
+@import url(../components/blocks/piechart.css);
