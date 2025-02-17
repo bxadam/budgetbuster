@@ -1,13 +1,33 @@
 .content {
   display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .content__expenses {
 }
 
 .content__expenses-title {
+  font-size: 32px;
 }
 
 .content__expenses-list {
   list-style: disc;
+  font-size: 28px;
+}
+
+.content__expenses-item {
+}
+
+.content__summary {
+  font-size: 30px;
+}
+
+.content__summary-title {
+  justify-content: center;
+  margin: 0;
+}
+
+.content__summary-description {
+  margin: 10px auto;
 }
