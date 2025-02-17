@@ -1,2 +1,12 @@
 .footer {
+  display: flex;
+  background-color: #3adc9e;
+  max-width: 1800px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 40px;
 }

@@ -16,6 +16,10 @@
   background-color: black;
 }
 
+.header__add-expense-button:hover {
+  cursor: pointer;
+}
+
 .header__budget-title {
   font-size: 30px;
 }
