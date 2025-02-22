@@ -1,11 +1,9 @@
-import { Auth } from "./components/Auth";
 import { useState, useEffect } from "react";
+import { Auth } from "../utils/auth";
 import { UserData } from "./Data";
 import { db } from "../utils/api";
-import { getDocs, collection } from "firebase/firestore";
 import PieChart from "./components/PieChart";
-
-import "./App.css";
+import { getDocs, collection } from "firebase/firestore";
 
 function App() {
   const [expenseList, setExpenseList] = useState([]);

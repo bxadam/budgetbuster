@@ -1,4 +1,4 @@
-import { auth, googleProvider } from "../../utils/api";
+import { auth, googleProvider } from "./api";
 import {
   createUserWithEmailAndPassword,
   signInWithPopup,
