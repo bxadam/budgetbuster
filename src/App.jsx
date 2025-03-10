@@ -2,8 +2,12 @@ import { useState, useEffect } from "react";
 import { Auth } from "../utils/auth";
 import { UserData } from "./Data";
 import { db } from "../utils/api";
-import PieChart from "./components/PieChart";
 import { getDocs, collection } from "firebase/firestore";
+
+//Components
+import PieChart from "./components/PieChart";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
 function App() {
   const [expenseList, setExpenseList] = useState([]);
@@ -37,11 +41,13 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Auth />
       <h1>BudgetBuster</h1>
       <div style={{ width: 400 }}>
         <PieChart chartData={userData} />
       </div>
+      <Footer />
     </div>
   );
 }
