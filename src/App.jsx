@@ -8,6 +8,7 @@ import { getDocs, collection } from "firebase/firestore";
 import PieChart from "./components/PieChart";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Expenses from "./components/Expenses";
 
 function App() {
   const [expenseList, setExpenseList] = useState([]);
@@ -44,6 +45,7 @@ function App() {
       <Header />
       <Auth />
       <h1>BudgetBuster</h1>
+      <Expenses />
       <div style={{ width: 400 }}>
         <PieChart chartData={userData} />
       </div>
